@@ -1,0 +1,75 @@
+/* Estilos para el navbar */
+.Navbar {
+
+    /* Estilos para el logo Left*/
+    .Navbar__logo {
+        @extend .d-flx-row-center;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        h6 {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            margin-left: 5px
+        }
+    }
+
+    /* Estilos para menú Right */
+    .Navbar__menu {
+        @extend .d-flx-row-center;
+
+        .items {
+            font-family: "Roboto-medium";
+            font-size: 16px;
+            padding: 15px 30px 15px 30px;
+            color: #000;
+            border-radius: 0%;
+
+            &:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Estilos para el menú */
+// .navbar__menu-list {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .navbar__menu-item {
+//     display: inline-block;
+//     margin-left: 20px;
+// }
+
+// .navbar__menu-item:first-child {
+//     margin-left: 0;
+// }
+
+// .navbar__menu-item a {
+//     color: white;
+//     text-decoration: none;
+// }
+
+// .navbar__menu-item a:hover {
+//     color: #ddd;
+// }
