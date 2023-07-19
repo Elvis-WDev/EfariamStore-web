@@ -10,3 +10,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.d-flx-column-center {
+    display: flex;
+    flex-direction: column;
+}
