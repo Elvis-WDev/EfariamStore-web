@@ -1,0 +1,149 @@
+// Sección introducción
+
+.Introduction_section {
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+
+
+    .title {
+        font-size: 48px;
+        font-family: "Roboto-Regular";
+        margin: 0px 0px 20px 0px;
+        color: #fff;
+    }
+
+    .box-tags {
+        border: 2px dashed #fff;
+        padding: 10px;
+
+        p {
+
+            font-size: 36px;
+            font-family: 'Open Sans', "Roboto-Regular";
+            color: #fff;
+        }
+
+        div>p {
+
+            font-size: 18px;
+            font-family: 'Open Sans', "Roboto-Regular";
+            color: #fff;
+        }
+    }
+
+}
+
+
+//Sección catálogo
+
+.Catalogo_section {
+    background-color: RGB(215, 206, 201);
+    text-align: center;
+    padding: 20px;
+
+    .Catalogo_section-title>p {
+        color: #000;
+        font-size: 48px;
+        font-family: "Roboto-Regular";
+        padding: 20px;
+        margin: 0px
+    }
+
+    .Catalogo_section-subtitle {
+        @extend .d-flx-row-center;
+        margin-bottom: 40px;
+    }
+
+    .Catalogo_section-subtitle>p {
+        width: 50%;
+        font-size: 20px;
+        color: #0000009e;
+        font-family: 'Open Sans', "Roboto-Regular";
+    }
+
+    .container_cards {
+        @extend .d-flx-row-center;
+
+        .card {
+            padding: 0px 40px 0px 40px;
+            margin: 0px 10px 0px 10px;
+            background-color: #fff;
+            border-radius: 20px;
+
+            .card_image {
+
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 120px;
+                overflow: hidden;
+
+
+                img {
+                    width: 120px;
+                }
+
+            }
+
+            .card_descripcion {
+
+
+                .card_descripcion-title>p {
+                    color: #000;
+                    font-size: 24px;
+                    font-family: "Roboto-Regular";
+                    padding: 0px;
+                    margin: 20px 0px 0px 0px;
+
+                }
+
+                .card_descripcion-link {
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                .card_descripcion-link>button {
+
+                    width: 80%;
+                    padding: 10px 0px 10px 0px;
+                    border-radius: 50px;
+                    border: none;
+                    background-color: #000;
+                    font-family: "Roboto-Black";
+                    font-weight: 200;
+                    font-size: 14px;
+                    color: #fff;
+                    transition: all 300ms ease;
+
+                    &:hover {
+                        background-color: #DB545A;
+                        cursor: pointer;
+                        transition: all 300ms ease;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+//Sección productos
+
+.Product_cards_section {
+    margin: 0px;
+    padding: 0px;
+
+    .prduct_card {
+
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid black;
+
+    }
+
+}
