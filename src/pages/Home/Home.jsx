@@ -1,9 +1,22 @@
 import React from 'react'
 import { Slider } from '../../components';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, FormControl, FormControlLabel, FormLabel, Grid, Paper, Radio, RadioGroup, Typography } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
+import { products } from "../../Data/DataProduct";
+import { ProductCard } from '../../components/Card/Card';
+import { styled } from '@mui/material/styles';
+
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
 
 export const Home = () => {
+
+
     return (
 
         <main>
@@ -80,27 +93,35 @@ export const Home = () => {
                 </Grid>
             </Grid>
             {/* PRODUCTOS SECTION */}
-            <Grid className='Product_cards_section' container>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-                <Grid className='prduct_card' item xs={3}>
-                    faw
-                </Grid>
-            </Grid>
 
+            <Box className="Product_section">
+                <Grid className="Product_section-container" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <ProductCard product={products} />
+                    </Grid>
+                </Grid>
+            </Box>
 
         </main >
 

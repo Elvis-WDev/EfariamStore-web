@@ -134,16 +134,10 @@
 
 //Sección productos
 
-.Product_cards_section {
-    margin: 0px;
-    padding: 0px;
+.Product_section {
+    background-color: #D7CEC9;
 
-    .prduct_card {
-
-        margin: 0px;
-        padding: 0px;
-        border: 1px solid black;
-
+    .Product_section-container {
+        padding: 50px;
     }
-
 }
