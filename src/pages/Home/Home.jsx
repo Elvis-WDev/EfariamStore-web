@@ -5,6 +5,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import { products } from "../../Data/DataProduct";
 import { ProductCard } from '../../components/Card/Card';
 import { styled } from '@mui/material/styles';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -92,36 +93,134 @@ export const Home = () => {
                     </Grid>
                 </Grid>
             </Grid>
+
             {/* PRODUCTOS SECTION */}
 
             <Box className="Product_section">
                 <Grid className="Product_section-container" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} xl={2} lg={3} md={4} sm={6}>
                         <ProductCard product={products} />
                     </Grid>
                 </Grid>
             </Box>
+
+            {/* DISEÑOS SECTION */}
+
+            <Grid container className='Design_section' sx={12}>
+                <Grid sx={12} className='title'>
+                    <p>Diseños exclusivos <font color="#DB545A">&#38; personalizados para cada ocasión.</font></p>
+                </Grid>
+                <Grid sx={12} className='images'>
+
+                    <div class="gallery">
+                        <div class="column">
+                            <img src="./img/test/img1.jpg" alt="Image 5" />
+                            <img src="./img/test/img2.jpg" alt="Image 6" />
+                            <img src="./img/test/img4.jpg" alt="Image 7" />
+                        </div>
+                        <div class="column">
+                            <img src="./img/test/img3.jpg" alt="Image 5" />
+                            <img src="./img/test/img2.jpg" alt="Image 6" />
+                            <img src="./img/test/img1.jpg" alt="Image 7" />
+                        </div>
+                        <div class="column">
+                            <img src="./img/test/img4.jpg" alt="Image 5" />
+                            <img src="./img/test/img1.jpg" alt="Image 6" />
+                            <img src="./img/test/img2.jpg" alt="Image 7" />
+                        </div>
+                    </div>
+                </Grid>
+            </Grid>
+
+
+            {/* SOCIAL SECTION */}
+
+            <Grid container xs={12} className='Resen_section'>
+                <Grid container xs={12} className='container'>
+                    <Grid xs={12} className='box_black'>
+                        <Grid xs={12} className='title'>
+                            <p>Reseñas de nuestros clientes</p>
+                        </Grid>
+                    </Grid>
+                    <Grid xs={12} className='content' container columnSpacing={3}>
+                        <Grid item xs={3} className='container_card'>
+                            <Grid container xs={12} className='card' spacing={0} columnSpacing={0}>
+                                <Grid item className='icon' xs={12}>
+                                    <p><FormatQuoteIcon sx={{ fontSize: "50px", m: 0, p: 0 }} /> </p>
+                                </Grid>
+                                <Grid item className='opinion' xs={12}>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi fugit repudiandae,
+                                        alias quo aliquam eaque distinctio.</p>
+                                </Grid>
+                                <Grid container item className='cliente' xs={12}>
+                                    <Grid item xs={12} className='image'>
+                                        <img src="./img/test/user_default.png" alt="" />
+                                    </Grid>
+                                    <Grid item xs={12} className='name'>
+                                        <p>Elvis Macas</p>
+                                    </Grid>
+                                    <Grid item xs={12} className='entidad'>
+                                        <p>Cliente</p>
+                                    </Grid>
+
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid item xs={3} className='container_card'>
+                            <Grid xs={12} className='card'>
+                                Tarjeta
+                            </Grid>
+                        </Grid>
+                        <Grid item xs={3} className='container_card'>
+                            <Grid xs={12} className='card'>
+                                Tarjeta
+                            </Grid>
+                        </Grid>
+                        <Grid item xs={3} className='container_card'>
+                            <Grid xs={12} className='card'>
+                                Tarjeta
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Grid xs={12} className='box_none'>
+
+                    </Grid>
+
+                </Grid>
+            </Grid>
+
+            {/* SOCIAL SECTION */}
+
+            <Grid container className='Social_section'>
+                <Grid item xs={12}>
+                    aaf
+                </Grid>
+                <Grid item xs={12}>
+                    aaf
+                </Grid>
+            </Grid>
 
         </main >
 

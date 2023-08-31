@@ -141,3 +141,137 @@
         padding: 50px;
     }
 }
+
+//Sección Diseños
+
+.Design_section {
+    width: 100%;
+    padding: 20px 50px 20px 50px;
+    background-color: RGB(215, 206, 201);
+    @extend .d-flx-row-center;
+
+    .title {
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto-Black';
+        margin-bottom: 15px;
+    }
+
+
+    .images {
+        width: 100%;
+
+        @extend .d-flx-row-center;
+
+        .gallery {
+            @extend .d-flx-row-center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px; // Espacio entre imágenes
+        }
+
+        .column {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px; // Espacio entre imágenes dentro de la columna
+
+            img {
+                max-width: 100%; // Asegura que las imágenes no excedan el ancho de la columna
+                height: auto; // Escala la altura proporcionalmente
+                transition: all 300ms ease-in-out;
+
+
+                &:hover {
+                    transform: scale(0.98);
+                    cursor: pointer;
+                    filter: grayscale(75%);
+                    transition: all 300ms ease-in-out;
+                }
+
+            }
+        }
+    }
+}
+
+//RESEÑAS SECCION
+
+.Resen_section {
+    .container {
+        position: relative;
+        @extend .d-flx-row-center;
+
+
+        .box_black {
+            background-color: #000;
+            border-bottom: 1px solid #fff;
+            height: 300px;
+
+            .title {
+                p {
+                    font-size: 30px;
+                    font-family: 'Roboto-Black';
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+
+                }
+            }
+
+        }
+
+        .content {
+            position: absolute;
+            top: 150px;
+            bottom: 0;
+            padding: 20px 50px 20px 50px;
+
+            .container_card {
+
+                .card {
+                    background-color: #fff;
+                    padding: 10px;
+
+
+                    .icon {
+                        margin: 0px;
+                        padding: 0px;
+                        border: 1px solid black;
+
+                        p {
+                            color: #DB545A;
+                            font-size: 50px;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+                    }
+
+                    .opinion {}
+
+                    //height: 300px;
+                    font-size: 15px;
+                    font-family: 'Roboto-regular';
+
+
+
+                }
+            }
+
+        }
+
+        .box_none {
+            height: 300px;
+            border-top: 1px solid white;
+            background-color: #D7CEC9;
+        }
+    }
+}
+
+// Social SECCION
+
+.Social_section {
+
+    background-color: #000;
+
+}

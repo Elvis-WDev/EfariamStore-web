@@ -22,7 +22,7 @@ export const Navbar = () => {
         <>
             <Grid container className='Navbar'>
                 <Grid item xs={6} md={6} className='Navbar__logo'>
-                    <img src="./img/Navbar/Logo_Efariam.png" alt="" />
+                    <img src="./img/Navbar/image.jpeg" alt="" />
                     <h6>EFARIAM STORE</h6>
                 </Grid>
                 <Grid item xs={6} md={6} className='Navbar__menu'>
